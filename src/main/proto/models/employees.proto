@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package models;
+option java_package = "com.protobuf";
+option java_outer_classname = "Models";
+
+message Employees {
+  repeated Employee employee = 1;
+}
+
+message Employee {
+  int64 id = 1;
+  string first_name = 2;
+  string last_name = 3;
+}
